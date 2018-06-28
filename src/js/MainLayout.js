@@ -6,6 +6,8 @@ import { Layout, Menu, Icon } from 'antd';
 import HomeLayout from './HomeLayout';
 import ChartLayout from './ChartLayout';
 
+
+
 const { Sider } = Layout;
 // const SubMenu = Menu.SubMenu;
 
@@ -57,7 +59,7 @@ class MainLayout extends Component {
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
               <Menu.Item key="1">
                 <Icon type="desktop" />
-                <Link style={ !this.state.collapsed ? linkInlineStyle : linkNoneStyle } to="/"><span>Home</span></Link>                
+                <Link to='/' style={ !this.state.collapsed ? linkInlineStyle : linkNoneStyle }><span>Home</span></Link>                
               </Menu.Item>
               <Menu.Item key="2">
                 <Icon type="pie-chart" />
