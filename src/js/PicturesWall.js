@@ -69,7 +69,7 @@ class PicturesWall extends Component {
             <div>
                 
                 <Upload
-                    action="http://140.118.155.149:5000/getresult"
+                    action="https://wapi.zio.tw/getresult"
                     listType="picture-card"
                     fileList={fileList}
                     onPreview={this.handlePreview}

@@ -8,7 +8,7 @@ const Option = Select.Option;
 
 
 const changeFileName = (className, fileName) => {
-    axios.post('http://140.118.155.149:5000/changeFileName',{
+    axios.post('https://wapi.zio.tw/changeFileName',{
         className: className,
         fileName: fileName
       })

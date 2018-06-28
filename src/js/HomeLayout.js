@@ -29,7 +29,7 @@ class HomeLayout extends Component {
     }
     
     componentWillMount = () => {
-        axios.get('http://140.118.155.149:5000/status')
+        axios.get('https://wapi.zio.tw/status')
         .then(res => {
             const status = res.data;
             this.setState({ serverStatus : status });
