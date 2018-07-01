@@ -47,8 +47,8 @@ class HomeLayout extends Component {
                         <Breadcrumb.Item>User</Breadcrumb.Item>
                         <Breadcrumb.Item>Bill</Breadcrumb.Item>
                     </Breadcrumb> */}
-                    <Row>
-                        <Col span={12}>
+                    <Row type="flex">
+                        <Col span={24} lg={12}>
                             
                             <Card title="服務器狀態" bordered={false} style={{ margin: '16px 16px' }}>
                                 { this.state.serverStatus ? 
@@ -68,7 +68,7 @@ class HomeLayout extends Component {
                                 
                             </Card>
                         </Col>
-                        <Col span={12}>
+                        <Col span={24} lg={12}>
                             <Card title="目前模型資訊" bordered={false} style={{ margin: '16px 16px' }}>
                                 <Alert
                                     message="模型版本"

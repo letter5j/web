@@ -8,7 +8,7 @@ import ChartLayout from './ChartLayout';
 
 
 
-const { Sider } = Layout;
+const { Header, Sider } = Layout;
 // const SubMenu = Menu.SubMenu;
 
 // Each logical "route" has two components, one for
@@ -50,10 +50,29 @@ class MainLayout extends Component {
       <Router>
 
         <Layout style={{ minHeight: '100vh' }}>
+          <Header className="show-md" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+            <div className="logo" />
+            <Menu
+              theme="dark"
+              mode="horizontal"
+              defaultSelectedKeys={['2']}
+              style={{ lineHeight: '64px' }}
+            >
+              <Menu.Item key="1">
+                  <Icon type="desktop" />
+                  <Link to='/' style={ !this.state.collapsed ? linkInlineStyle : linkNoneStyle }><span>Home</span></Link>                
+                </Menu.Item>
+                <Menu.Item key="2">
+                  <Icon type="pie-chart" />
+                  <Link style={ !this.state.collapsed ? linkInlineStyle : linkNoneStyle } to="/chart"><span>Chart</span></Link>
+                </Menu.Item>
+            </Menu>
+          </Header>
           <Sider
             collapsible
             collapsed={this.state.collapsed}
             onCollapse={this.onCollapse}
+            className="hide-md"
           >
             <div className="logo" />
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
