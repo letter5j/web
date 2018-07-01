@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
 .show-xs,
 .show-sm,
 .show-md,
@@ -59,4 +60,12 @@ body {
   .show-xs {
     display: block !important;
   }
+}
+
+.ant-layout-header > .ant-menu-horizontal > .ant-menu-item > a {
+  display: inline;
+}
+
+.ant-menu > .ant-menu-item > a {
+  display: inline;
 }

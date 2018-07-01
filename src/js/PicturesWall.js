@@ -22,7 +22,6 @@ class PicturesWall extends Component {
         previewVisible: false,
         previewImage: '',
         fileList: [],
-        multiple: true,
         uidList: []
     };
 

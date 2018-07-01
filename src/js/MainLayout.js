@@ -29,13 +29,6 @@ const routes = [
   }
 ];
 
-const linkInlineStyle = {
-  display: 'inline',
-  visibility: 'visible'
-}
-const linkNoneStyle = {
-  visibility: 'hidden'
-}
 
 class MainLayout extends Component {
     state = {
@@ -60,11 +53,11 @@ class MainLayout extends Component {
             >
               <Menu.Item key="1">
                   <Icon type="desktop" />
-                  <Link to='/' style={ !this.state.collapsed ? linkInlineStyle : linkNoneStyle }><span>Home</span></Link>                
+                  <Link to='/'>Home</Link>                
                 </Menu.Item>
                 <Menu.Item key="2">
                   <Icon type="pie-chart" />
-                  <Link style={ !this.state.collapsed ? linkInlineStyle : linkNoneStyle } to="/chart"><span>Chart</span></Link>
+                  <Link to="/chart">Chart</Link>
                 </Menu.Item>
             </Menu>
           </Header>
@@ -78,11 +71,11 @@ class MainLayout extends Component {
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
               <Menu.Item key="1">
                 <Icon type="desktop" />
-                <Link to='/' style={ !this.state.collapsed ? linkInlineStyle : linkNoneStyle }><span>Home</span></Link>                
+                <Link to='/'>Home</Link>                
               </Menu.Item>
               <Menu.Item key="2">
                 <Icon type="pie-chart" />
-                <Link style={ !this.state.collapsed ? linkInlineStyle : linkNoneStyle } to="/chart"><span>Chart</span></Link>
+                <Link to="/chart">Chart</Link>
               </Menu.Item>
 
               {/* <SubMenu
